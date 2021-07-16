@@ -7,7 +7,7 @@ import {isAuth, isAdmin} from "../utils.js"
 const productRouter = express.Router();
 
 productRouter.get(
-  '/',
+  '/',    
   expressAsyncHandler(async (req, res) => {
     const products = await Product.find({});
     res.send(products);
@@ -70,6 +70,7 @@ productRouter.put(
       product.brand = req.body.brand;
       product.stock = req.body.stock;
       product.description = req.body.description;
+      product.dloc = req.body.dloc;
       const updatedProduct = await product.save();
       res.send({ message: 'Product Updated', product: updatedProduct });
     } else {

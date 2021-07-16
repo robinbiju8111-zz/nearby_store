@@ -11,6 +11,7 @@ const productSchema = new mongoose.Schema(
     stock: { type: Number, required: true },
     rating: { type: Number, required: true },
     numreviews: { type: Number, required: true },
+    dloc: { type:  Number, required: true },
   },
   {
     timestamps: true,

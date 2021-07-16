@@ -11,12 +11,16 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.6.0",
+    "chart": "^0.1.2",
+    "chart.js": "^3.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "http-proxy-middleware": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.14",
+    "react-bootstrap": "^1.6.1",
     "react-paypal-button-v2": "^2.6.3"
   },
   "devDependencies": {
